@@ -117,7 +117,7 @@ class DirectAdminClient:
 
     def delete_dns_record(self, domain, record_type, record_name, record_value):
         params = OrderedDict([('domain', domain),
-                              ('action', 'select'),
+                              ('action', 'delete'),
                               (record_type.lower() + "recs0", 'name={}&value={}'.format(record_name, record_value))
                               ])
 
